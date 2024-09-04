@@ -1,2 +1,2 @@
 # stanCode
-The assignments I finished by myself after class.
+The Python assignments I finished by myself after class.
