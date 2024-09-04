@@ -29,7 +29,7 @@ def main():
 			print(str(n) + ' is not a prime number.')
 			n = int(input('n: '))
 			m = n - 1
-		elif m > 1:  # n不可以被m整除 -> 餘數!=0
+		elif m > 2:  # n不可以被m整除 -> 餘數!=0
 			m = m - 1
 		else:
 			print(str(n) + ' is a prime number.')
