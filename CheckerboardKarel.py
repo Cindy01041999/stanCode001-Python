@@ -16,13 +16,16 @@ def main():
     Pre-condition:Karel is at (1,1), facing East.
     Post-condition:Karel is at (1,8), facing West.
     """
-    while front_is_clear():
-        put_beeper_in_line()
-        go_back()
-        turn_to_next_line()
-    turn_left()
-    while front_is_clear():
-        put_beeper_in_line()
+    if not front_is_clear() and not left_is_clear():  #for 1x1
+        put_beeper()
+    else:
+        while front_is_clear():
+            put_beeper_in_line()
+            go_back()
+            turn_to_next_line()
+        turn_left()
+        while front_is_clear():
+            put_beeper_in_line()
 
 
 def put_beeper_in_line():
